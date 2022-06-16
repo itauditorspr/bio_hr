@@ -10,7 +10,7 @@ class HrEmployee(models.Model):
     categorie = fields.Selection([
         ('Cadre', 'Cadre'),
         ('Maitrise', 'Maitrise'),
-        ('Agent ', 'Agent exécution')], string='Catégorie', groups="hr.group_hr_user", default='single', tracking=True)
+        ('Agent ', 'Agent exécution')], string='Catégorie', groups="hr.group_hr_user", tracking=True)
 
     echelle = fields.Integer(string="Echelle", required=False)
 
@@ -26,7 +26,7 @@ class HrEmployee(models.Model):
         ('M4', 'M4'),
         ('C1', 'C1'),
         ('C2', 'C2'),
-        ('C3', 'C3')], string='echlon', groups="hr.group_hr_user", default='single', tracking=True)
+        ('C3', 'C3')], string='echlon', groups="hr.group_hr_user", tracking=True)
 
     salaire_de_base = fields.Char(string='Salaire de base selon la convention', compute='_compute_salaire_de_base')
     chef_de_famille = fields.Boolean(string='Chef de famille', default=False)
