@@ -3,7 +3,7 @@
     <data noupdate="0">
 
         <!-- Contribution Register -->
-        <record id="contrib_register_employees" model="hr.contribution.register">
+<!--         <record id="contrib_register_employees" model="hr.contribution.register">
             <field name="name">Employees</field>
         </record>
 
@@ -21,7 +21,7 @@
 
         <record id="hr_prevoyance_register" model="hr.contribution.register">
             <field name="name">Organisme de prevoyance</field>
-        </record>
+        </record> -->
 
         <!-- RULE CATEGORIES-->
 
