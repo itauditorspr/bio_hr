@@ -24,7 +24,7 @@
         </record> -->
 
         <!-- RULE CATEGORIES-->
-
+<!-- 
         <record id="BASIC" model="hr.salary.rule.category">
             <field name="name">Basic</field>
             <field name="code">BASIC</field>
@@ -2510,7 +2510,7 @@ result_name = inputs.ASSIG_SALARY.name</field>
             <field name="company_id" ref="base.main_company"/>
 <!--            <field name="parent_id" ref="structure_base"/>-->
 		    <field name="note">Cette rubrique représente la structure des employés tunisiens.</field>
-        </record>
+        </record> -->
 
         <!-- Decimal Precision -->
 <!--        <record forcecreate="True" id="decimal_payroll" model="decimal.precision">-->
