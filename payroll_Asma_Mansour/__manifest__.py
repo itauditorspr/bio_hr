@@ -18,7 +18,7 @@
     'images': ['static/description/Banner.jpg'],
     "license": "LGPL-3",
     "author": "Asma Mansour",
-    "depends": ["hr_contract","base", "hr","hr_holidays"],
+    "depends": ["hr_contract","base", "hr","hr_holidays", "hr_payslip"],
     "data": [
         "data/hr_payroll_sequence.xml",
         "views/hr_employee_views.xml",
