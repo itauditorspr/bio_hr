@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Employee View -->
+    <record id="hr_employee_view_form" model="ir.ui.view">
+        <field name="name">hr.employee.view.form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form" />
+        <field name="arch" type="xml">
+
+             <xpath expr="//field[@name='identification_id']" position="attributes">
+                        <attribute name="string">CIN</attribute>
+            </xpath>
+            <xpath expr="//field[@name='identification_id']" position="after">
+                <field name="matricule_cnss"/>
+                <field name="num_chezemployeur"/>
+            </xpath>
+            <xpath expr="//field[@name='children']" position="before">
+                <field name="chef_de_famille"/>
+            </xpath>
+            <xpath expr="//field[@name='job_id']" position="after">
+                <field name="categorie"/>
+                <field name="echlon"/>
+                <field name="echelle"/>
+                <field name="salaire_de_base"/>
+                <field name="soumis_aux_heures_sup"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

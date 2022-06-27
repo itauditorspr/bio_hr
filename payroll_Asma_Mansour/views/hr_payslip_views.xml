@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- payslip View -->
+    <record id="hr_payslip_view_form1" model="ir.ui.view">
+        <field name="name">hr.payslip.view.form</field>
+        <field name="model">hr.payslip</field>
+        <field name="inherit_id" ref="om_hr_payroll.view_hr_payslip_form" />
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='contract_id']" position="after">
+
+                <field name="working_days"/>
+                <field name="jour_de_repos_1"/>
+                <field name="jour_de_repos_2"/>
+                <field name="sum_worked_hours"/>
+
+
+            </xpath>
+<!--            <xpath expr="//notebook/page//tree/field[@name='number_of_days']" position="after">-->
+<!--                <field name="sum_worked_hours"/>-->
+<!--            </xpath>-->
+        </field>
+
+<!--        <notebook>-->
+<!--            <page string="Worked Days &amp; Inputs">-->
+<!--                    <separator string="Worked Days"/>-->
+<!--                    <field name="worked_days_line_ids">-->
+<!--                        <form string="Worked Day">-->
+<!--                            <group col="5">-->
+<!--                                <field name="name"/>-->
+<!--                                <field name="code"/>-->
+<!--                                <field name="sequence"/>-->
+<!--                                <field name="number_of_days"/>-->
+<!--                                <field name="sum_worked_hours"/>-->
+<!--                                <field name="contract_id"/>-->
+<!--                            </group>-->
+<!--                        </form>-->
+<!--                    </field>-->
+<!--                </page>-->
+<!--        <notebook>-->
+    </record>
+</odoo>
