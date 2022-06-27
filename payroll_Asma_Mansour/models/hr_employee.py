@@ -56,31 +56,31 @@ class HrEmployee(models.Model):
     def _compute_salaire_de_base(self):
         for record in self:
             if record.echlon == "E0" and record.echelle == 1:
-                record.salaire_de_base = 594.95
+                record.salaire_de_base = 59495
             elif record.echlon == "E0" and record.echelle == 2:
-                record.salaire_de_base = 595.439
+                record.salaire_de_base = 595439
             elif record.echlon == "E0" and record.echelle == 3:
-                record.salaire_de_base = 595.967
+                record.salaire_de_base = 595967
             elif record.echlon == "E0" and record.echelle == 4:
-                record.salaire_de_base = 596.504
+                record.salaire_de_base = 596504
             elif record.echlon == "E0" and record.echelle == 5:
-                record.salaire_de_base = 597.074
+                record.salaire_de_base = 597074
             elif record.echlon == "E0" and record.echelle == 6:
-                record.salaire_de_base = 597.673
+                record.salaire_de_base = 597673
             elif record.echlon == "E0" and record.echelle == 7:
-                record.salaire_de_base = 598.302
+                record.salaire_de_base = 598302
             elif record.echlon == "E0" and record.echelle == 8:
-                record.salaire_de_base = 598.962
+                record.salaire_de_base = 598962
             elif record.echlon == "E0" and record.echelle == 9:
-                record.salaire_de_base = 601.828
+                record.salaire_de_base = 601828
             elif record.echlon == "E0" and record.echelle == 10:
-                record.salaire_de_base = 604.445
+                record.salaire_de_base = 604445
             elif record.echlon == "E0" and record.echelle == 11:
-                record.salaire_de_base = 607.194
+                record.salaire_de_base = 607194
             elif record.echlon == "E0" and record.echelle == 12:
-                record.salaire_de_base = 610.146
+                record.salaire_de_base = 610146
             elif record.echlon == "E0" and record.echelle == 13:
-                record.salaire_de_base = 616.197
+                record.salaire_de_base = 616197
 
             elif record.echlon == "E1" and record.echelle == 1:
                 record.salaire_de_base = 600.636
