@@ -12,7 +12,7 @@
                 <field name="working_days"/>
                 <field name="jour_de_repos_1"/>
                 <field name="jour_de_repos_2"/>
-                <field name="sum_worked_hours"/>
+<!--                 <field name="sum_worked_hours"/> -->
 
 
             </xpath>
