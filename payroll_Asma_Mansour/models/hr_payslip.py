@@ -19,12 +19,12 @@ class HrPayslip(models.Model):
     working_days = fields.Integer(string='Working days', compute='_compute_working_days', default=0)
     jour_de_repos_1 = fields.Selection(related='employee_id.contract_ids.jour_de_repos_1')
     jour_de_repos_2 = fields.Selection(related='employee_id.contract_ids.jour_de_repos_2')
-    sum_worked_hours = fields.Float(compute='_compute_worked_hours', store=True,
-                                    help='Total hours of attendance and time off (paid or not)')
-    @api.depends('worked_days_line_ids.number_of_hours')
-    def _compute_worked_hours(self):
-        for payslip in self:
-            payslip.sum_worked_hours = sum([line.number_of_hours for line in payslip.worked_days_line_ids])
+#     sum_worked_hours = fields.Float(compute='_compute_worked_hours', store=True,
+#                                     help='Total hours of attendance and time off (paid or not)')
+#     @api.depends('worked_days_line_ids.number_of_hours')
+#     def _compute_worked_hours(self):
+#         for payslip in self:
+#             payslip.sum_worked_hours = sum([line.number_of_hours for line in payslip.worked_days_line_ids])
 
     @api.depends('jour_de_repos_1', 'jour_de_repos_2', 'date_to', 'date_from')
     def _compute_working_days(self):
