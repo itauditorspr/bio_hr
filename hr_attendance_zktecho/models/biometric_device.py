@@ -155,7 +155,7 @@ class BiomtericDeviceInfo(models.Model):
                 raise Warning(
                     "can't reach device (ping %s), make sure the device is powered on and connected to the network" % self.ipaddress)
             else:
-                raise Warning(e)
+                raise Warning(str(e))
         except ZKErrorResponse as e:
             if e.args[0] == 'Unauthenticated':
                 raise Warning(
